@@ -10,7 +10,6 @@ This is my first document stored in Git.
 
 
 ## Module 1: Networking Today
-
 ![Slide 1](slides/Slide1.PNG)
 ![Slide 2](slides/Slide2.PNG)
 ![Slide 3](slides/Slide3.PNG)
