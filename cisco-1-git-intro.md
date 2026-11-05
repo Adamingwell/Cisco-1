@@ -11,46 +11,46 @@ This is my first document stored in Git.
 ## Module 1: Networking Today
 
 
-A.1 Explain what an end device is and how it is important for network communications.
-Your answer
+A.1 Explain what an end device is and how it is important for network communications. <br>
+Your answer <br>
 An end device is a device on the edge of a network that is either the source or the destination of data transmitted across the network. <br>
-A.2 Explain what an intermediary device's functions are.
-Your answer
+A.2 Explain what an intermediary device's functions are. <br>
+Your answer <br>
 Intermediary devices connect end devices to the network. Examples would be a switch or a router. <br>
-A.3 What does network media do? 
-Your answer
+A.3 What does network media do? <br>
+Your answer <br>
 Network media transfers information across the network. Examples would be LAN cables, Fiber-optic cables, or Wi-Fi. <br>
-A.4 What are three types of network media you will find?
-Your answer
+A.4 What are three types of network media you will find? <br>
+Your answer <br>
 LAN cables, fiber-optic cables, and wireless signals. <br>
-A.5 What is the difference between a physical topology and a logical topology?
-Your answer
+A.5 What is the difference between a physical topology and a logical topology? <br>
+Your answer <br>
 Physical topology shows the physical location of network devices on a diagram. Logical topology shows how the devices on the network are connected. <br>
-A.6 What are the differences between the four different size networks you will encounter?
-Your answer
+A.6 What are the differences between the four different size networks you will encounter? <br>
+Your answer <br>
 Small home networks connect a few devices to each other and the internet. <br>
- Small office or home office networks connect devices to each other and a centralized network off-site such as a corporate network.
- Medium to large networks will connect many locations with hundreds or thousands of connected hosts.
+ Small office or home office networks connect devices to each other and a centralized network off-site such as a corporate network. <br>
+ Medium to large networks will connect many locations with hundreds or thousands of connected hosts. <br>
  World-wide networks connect the entire world, the internet is a great example of this. <br>
-A.7 What is the difference between a LAN and a WAN?
-Your answer
+A.7 What is the difference between a LAN and a WAN? <br>
+Your answer <br>
 A LAN is a local area network. It connects a few devices on a smaller network locally. Some examples would be a home network or a school network. <br>
  
  A WAN is a wide area network. It connects several local area networks to one another using multiple providers. A large corporation with many locations would use a WAN to connect the locations to one-another. <br>
-A.8 Explain fault tolerance and why it is so important in a network.
-Your answer
+A.8 Explain fault tolerance and why it is so important in a network. <br>
+Your answer <br>
 Fault tolerance is the ability to stay connected if something within the network fails. It is important because it will keep critical information available during an outage. <br>
-A.9 Explain the three primary requirements of network security.
-Your answer
+A.9 Explain the three primary requirements of network security. <br>
+Your answer <br>
 Confidentiality-data stays between the people intended to have it. <br>
  Integrity-making sure the data has not been corrupted <br>
  Availability-making sure you can access the data whenever it is needed. <br>
-A.10 Explain the concept of BYOD and how it will affect your career as an IT professional.
-Your answer
+A.10 Explain the concept of BYOD and how it will affect your career as an IT professional. <br>
+Your answer <br>
 BYOD means bring your own device. It is the concept that any person can use any device that they want to. <br>
  It affects my career because I will need to develop apps that work on many different ecosystems. <br>
-A.11 Explain the common external threats to our networks.
-Your answer
+A.11 Explain the common external threats to our networks. <br>
+Your answer <br>
 Viruses - malicious software or code that takes over a computer or network <br>
  Spyware - collects information about the user without permission <br>
  Zero-Day - threats that happen on the first known day <br>
@@ -58,12 +58,12 @@ Viruses - malicious software or code that takes over a computer or network <br>
  Denial of service - slowing or crashing apps on a network <br>
  Data interception or theft - stealing information as it is being transmitted <br>
  Identity theft - stealing personal information of a user <br>
-B. Reflection
-B.1 What is one thing that you learned from module 1?
-Your answer
+B. Reflection<br>
+B.1 What is one thing that you learned from module 1?<br>
+Your answer<br>
 I learned the difference between LAN and WAN <br>
-B.2 What is one thing that you already knew from module 1?
-Your answer
+B.2 What is one thing that you already knew from module 1?<br>
+Your answer<br>
 I already knew the concept of cloud computing. <br>
 
 
@@ -106,55 +106,55 @@ I already knew the concept of cloud computing. <br>
 ## Module 2: Basic Switch and End-Device Configurations
 
 A.1 Please explain the 3 different access methods you can use to connect to a switch's operating system.
-Your answer
-Console - A physical management port to connect directly to the switch.
- Secure Shell - A secure connection to remotely establish a CLI connection, requires active network.
+Your answer<br>
+Console - A physical management port to connect directly to the switch.<br>
+ Secure Shell - A secure connection to remotely establish a CLI connection, requires active network.<br>
  Telnet - Unsecure remote connection to a CLI, requires active network, will broadcast usernames, passwords, etc in plain text. <br>
-A.2 What's the difference between telnet and SSH? Which one would you choose to use and why?
-Your answer
+A.2 What's the difference between telnet and SSH? Which one would you choose to use and why?<br>
+Your answer<br>
 SSH is secure and encrypted where Telnet is not even remotely secure and will broadcast user info in plain text that anyone that is connected can see. <br>
-A.3 Explain the 2 primary modes of operation in a networking device.
-Your answer
+A.3 Explain the 2 primary modes of operation in a networking device.<br>
+Your answer<br>
 User exec mode - a view only mode that does not allow you to change the configuration of a device.
  Privileged exec mode - a more powerful mode that allows you to view and change all files. <br>
-A.4 Explain what Global Configuration Mode is.
-Your answer
+A.4 Explain what Global Configuration Mode is.<br>
+Your answer<br>
 Global configuration mode allows you to change any configuration on a router, including usernames, passwords, etc. <br>
-A.5 When using a networking device's CLI, why is the "?" one of the most valuable keys on the keyboard?
-Your answer
+A.5 When using a networking device's CLI, why is the "?" one of the most valuable keys on the keyboard?<br>
+Your answer<br>
 ? will help you understand context-sensitive commands such as which commands are available, which commands start with specific characters, or which arguments and keywords are available. <br>
-A.6 What Hot Keys and Shortcuts are available to you in a networking device's CLI?
-Your answer
-I provided a screenshot of the hotkeys.
- There is also enter to display the next line, space bar to display the next screen, any other key will return to the previous prompt.
- Ctrl-C will return to privileged exec mode or aborts to the command prompt if you are in setup.
- Ctrl-Z will return to privileged exec mode.
+A.6 What Hot Keys and Shortcuts are available to you in a networking device's CLI?<br>
+Your answer<br>
+I provided a screenshot of the hotkeys.<br>
+ There is also enter to display the next line, space bar to display the next screen, any other key will return to the previous prompt.<br>
+ Ctrl-C will return to privileged exec mode or aborts to the command prompt if you are in setup.<br>
+ Ctrl-Z will return to privileged exec mode.<br>
  Ctrl-shift-6 will abort DNS lookups, traceroutes, pings, etc. <br>
  
-A.7 Explain some guidelines to keep in mind when it comes to naming your networking devices.
-Your answer
+A.7 Explain some guidelines to keep in mind when it comes to naming your networking devices.<br>
+Your answer<br>
 Names should start with a letter, contain no spaces, end with a letter or number, use only letters, numbers or dashes, and be less than 64 characters in length. <br>
-A.8 In order to keep our devices secure we will be using passwords. What can we do to make our passwords as secure as possible?
-Your answer
+A.8 In order to keep our devices secure we will be using passwords. What can we do to make our passwords as secure as possible?<br>
+Your answer<br>
 Use passwords that are more than eight characters in length, use upper and lowercase letters, numbers, special characters, or numeric sequences, avoid using the same password for all devices, and do not use common words that are easily guessed. <br>
-A.9 What is the difference between a Privileged EXEC Password and a User Exec Password?
-Your answer
+A.9 What is the difference between a Privileged EXEC Password and a User Exec Password?<br>
+Your answer<br>
 A user exec password will be entered by using the password command and the privileged exec password will be used by entering the enable secret (password) command. <br>
-A.10 What are a networking device's two main configuration files, and where are they stored?
-Your answer
+A.10 What are a networking device's two main configuration files, and where are they stored?<br>
+Your answer<br>
 Startup-config contains all commands that will be used by startup or reboot and is stored in NVRAM
  Running-config reflects the current configuration and is stored in RAM. It will lose all content once the device is powered down or restarted. <br>
-A.11 Why does a device on a network need an IP Address?
-Your answer
+A.11 Why does a device on a network need an IP Address?<br>
+Your answer<br>
 An IP address is basically the name that your device uses to communicate with other devices. It cannot communicate without one. <br>
-A.12 How many IP Addresses can one device have at the same time?
-Your answer
+A.12 How many IP Addresses can one device have at the same time?<br>
+Your answer<br>
 A device can have one IP address per network interface. For example Wi-Fi and Ethernet can have different IP addresses. <br>
-A.13 What command allows you to verify a computer's IP Configurations on a Windows PC?
-Your answer
+A.13 What command allows you to verify a computer's IP Configurations on a Windows PC?<br>
+Your answer<br>
 ipconfig <br>
-A.14 What is the name of the interface on a switch that gets an IP Address? Also, how do you put an IP Address on that interface?
-Your answer
+A.14 What is the name of the interface on a switch that gets an IP Address? Also, how do you put an IP Address on that interface?<br>
+Your answer<br>
 The switch virtual interface or SVI get an IP address. <br>
  configure terminal <br>
  interface vlan 1 <br>
@@ -162,15 +162,15 @@ The switch virtual interface or SVI get an IP address. <br>
  no shutdown <br>
  end <br>
  copy running-config startup-config <br>
-A.15 Why would you test End-to-End Connectivity and what command would you use to test it?
-Your answer
+A.15 Why would you test End-to-End Connectivity and what command would you use to test it?<br>
+Your answer<br>
 You would test end-to-end connectivity to verify that you are connected to the network. You would use the command ping (enter ip address) <br>
-B. Refelction
-B.1 What is one thing that you learned from module 2?
-Your answer
+B. Refelction<br>
+B.1 What is one thing that you learned from module 2?<br>
+Your answer<br>
 I learned the difference between console, ssh, and telnet and why you should only use telnet in a lab environment. <br>
-B.2 What do you think the most important thing from this module was?
-Your answer
+B.2 What do you think the most important thing from this module was?<br>
+Your answer<br>
 I think properly making a password is the most important thing from this module. <br>
 
 
