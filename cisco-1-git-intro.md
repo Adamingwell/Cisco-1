@@ -382,3 +382,4 @@ e.     Encrypt all plain text passwords.<br>
 f.      Ensure that the configuration is correct.<br>
 g.     Save the configuration file to avoid loss if the switch is powered down.<br>
 
+## Module 3
