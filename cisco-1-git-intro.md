@@ -383,3 +383,81 @@ f.      Ensure that the configuration is correct.<br>
 g.     Save the configuration file to avoid loss if the switch is powered down.<br>
 
 ## Module 3
+
+Packet Tracer - Implement Basic Connectivity<br>
+Addressing Table<br>
+Device	Interface	IP Address	Subnet Mask<br>
+S1	VLAN 1	192.168.1.253	255.255.255.0<br>
+S2	VLAN 1	192.168.1.254	255.255.255.0<br>
+PC1	NIC	192.168.1.1	255.255.255.0<br>
+PC2	NIC	192.168.1.2	255.255.255.0<br>
+Objectives<br>
+Part 1: Perform a Basic Configuration on S1 and S2<br>
+Part 2: Configure the PCs<br>
+Part 3: Configure the Switch Management Interface<br>
+Background<br>
+In this activity, you will first create a basic switch configuration. Then, you will implement basic connectivity by configuring IP addressing on switches and PCs. When the IP addressing configuration is complete, you will use various show commands to verify the configuration and use the ping command to verify basic connectivity between devices.<br>
+Instructions<br>
+Part 1: Perform a Basic Configuration on S1 and S2<br>
+Complete the following steps on S1 and S2.<br>
+Step 1: Configure S1 with a hostname.<br>
+a.     Click S1 and then click the CLI tab.<br>
+b.     Enter the correct command to configure the hostname as S1.<br>
+Step 2: Configure the console and encrypted privileged EXEC mode passwords.<br>
+a.     Use cisco for the console password.<br>
+b.     Use class for the privileged EXEC mode password.<br>
+Step 3: Verify the password configurations for S1.<br>
+Question:<br>
+How can you verify that both passwords were configured correctly?<br>
+Use an appropriate banner text to warn unauthorized access. The following text is an example:<br>
+Authorized access only. Violators will be prosecuted to the full extent of the law.<br>
+Step 4: Save the configuration file to NVRAM.<br>
+Which command do you issue to accomplish this step?<br>
+Step 5: Repeat Steps 1 to 5 for S2.<br>
+Part 2: Configure the PCs<br>
+Configure PC1 and PC2 with IP addresses.<br>
+Step 1: Configure both PCs with IP addresses.<br>
+a.     Click PC1 and then click the Desktop tab.<br>
+b.     Click IP Configuration. In the Addressing Table above, you can see that the IP address for PC1 is 192.168.1.<br>1 and the subnet mask is 255.255.255.0. Enter this information for PC1 in the IP Configuration window.
+c.     Repeat steps 1a and 1b for PC2.<br>
+Step 2: Test connectivity to switches.<br>
+a.     Click PC1. Close the IP Configuration window if it is still open. In the Desktop tab, click Command Prompt.<br>
+b.     Type the ping command and the IP address for S1 and press Enter.<br>
+Packet Tracer PC Command Line 1.0<br>
+PC> ping 192.168.1.253<br>
+Question:<br>
+Were you successful? Explain.<br>
+Part 3: Configure the Switch Management Interface<br>
+Configure S1 and S2 with an IP address.<br>
+Step 1: Configure S1 with an IP address.<br>
+Switches can be used as plug-and-play devices. This means that they do not need to be configured for them to work.<br> Switches forward information from one port to another based on MAC addresses.<br>
+Question:<br>
+If this is the case, why would we configure it with an IP address?<br>
+Use the following commands to configure S1 with an IP address.<br>
+S1# configure terminal<br>
+Enter configuration commands, one per line. End with CNTL/Z.<br>
+S1(config)# interface vlan 1<br>
+S1(config-if)# ip address 192.168.1.253 255.255.255.0<br>
+S1(config-if)# no shutdown<br>
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up<br>
+S1(config-if)#<br>
+S1(config-if)# exit<br>
+S1#<br>
+Question:<br>
+Why do you enter the no shutdown command?<br>
+Step 2: Configure S2 with an IP address.<br>
+Use the information in the Addressing Table to configure S2 with an IP address.<br>
+Step 3: Verify the IP address configuration on S1 and S2.<br>
+Use the show ip interface brief command to display the IP address and status of all the switch ports and <br>interfaces. You can also use the show running-config command.<br>
+Step 4: Save configurations for S1 and S2 to NVRAM.<br>
+Question:<br>
+Which command is used to save the configuration file in RAM to NVRAM?<br>
+Step 5: Verify network connectivity.<br>
+Network connectivity can be verified using the ping command. It is very important that connectivity exists <br>throughout the network. Corrective action must be taken if there is a failure. Ping S1 and S2 from PC1 and PC2.<br>
+a.     Click PC1 and then click the Desktop tab.<br>
+b.     Click Command Prompt.<br>
+c.     Ping the IP address for PC2.<br>
+d.     Ping the IP address for S1.<br>
+e.     Ping the IP address for S2.<br>
+Note: You can also use the ping command on the switch CLI and on PC2.<br>
+All pings should be successful. If your first ping result is 80%, try again. It should now be 100%. You will learn why a ping may sometimes fail the first time later in your studies. If you are unable to ping any of the devices, recheck your configuration for errors.<br>
