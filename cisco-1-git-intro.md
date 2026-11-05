@@ -244,3 +244,141 @@ I think properly making a password is the most important thing from this module.
 ![Module 2 slide 19, a networking lesson screen with instructional text and visual content on a light background.](<Slides/Module 2/Slide 19.png>)
 
 ![Module 2 slide 20, a networking lesson screen with instructional text and visual content on a light background.](<Slides/Module 2/Slide 20.png>)
+
+Packet Tracer - Configure Initial Switch Settings<br>
+Objectives<br>
+Part 1: Verify the Default Switch Configuration<br>
+Part 2: Configure a Basic Switch Configuration<br>
+Part 3: Configure a MOTD Banner<br>
+Part 4: Save Configuration Files to NVRAM<br>
+Part 5: Configure S2<br>
+Background / Scenario<br>
+In this activity, you will perform basic switch configuration tasks. You will secure access to the command-line interface (CLI) and console ports using encrypted and plain text passwords. You will also learn how to configure messages for users logging into the switch. These message banners are also used to warn unauthorized users that access is prohibited.<br>
+Note: In Packet Tracer, the Catalyst 2960 switch uses IOS version 12.2 by default. If required, the IOS version can be updated from a file server in the Packet Tracer topology. The switch can then be configured to boot to IOS version 15.0, if that version is required.<br>
+Instructions<br>
+Part 1: Verify the Default Switch Configuration<br>
+Step 1: Enter privileged EXEC mode.<br>
+You can access all switch commands from privileged EXEC mode. However, because many of the privileged commands configure operating parameters, privileged access should be password-protected to prevent unauthorized use.
+The privileged EXEC command set includes the commands available in user EXEC mode, many additional commands, and the configure command through which access to the configuration modes is gained.<br>
+a.     Click S1 and then the CLI tab. Press Enter.<br>
+b.     Enter privileged EXEC mode by entering the enable command:<br>
+Open Configuration Window for S1<br>
+Switch> enable<br>
+Switch#<br>
+Notice that the prompt changed to reflect privileged EXEC mode.<br>
+Step 2: Examine the current switch configuration.<br>
+Enter the show running-config command.<br>
+Switch# show running-config<br>
+Answer the following questions:<br>
+How many Fast Ethernet interfaces does the switch have?<br>
+How many Gigabit Ethernet interfaces does the switch have?<br>
+What is the range of values shown for the vty lines?<br>
+Which command will display the current contents of non-volatile random-access memory (NVRAM)?<br>
+Why does the switch respond with “startup-config is not present?”<br>
+Part 2: Create a Basic Switch Configuration<br>
+Step 1: Assign a name to a switch.<br>
+To configure parameters on a switch, you may be required to move between various configuration modes. Notice how the prompt changes as you navigate through the switch.<br>
+Switch# configure terminal<br>
+Switch(config)# hostname S1<br>
+S1(config)# exit<br>
+S1#<br>
+Step 2: Secure access to the console line.<br>
+To secure access to the console line, access config-line mode and set the console password to letmein.<br>
+S1# configure terminal<br>
+Enter configuration commands, one per line. End with CNTL/Z.<br>
+S1(config)# line console 0<br>
+S1(config-line)# password letmein<br>
+S1(config-line)# login<br>
+S1(config-line)# exit<br>
+S1(config)# exit<br>
+%SYS-5-CONFIG_I: Configured from console by console<br>
+S1#<br>
+Question:<br>
+Why is the login command required?<br>
+Step 3: Verify that console access is secured.<br>
+Exit privileged mode to verify that the console port password is in effect.<br>
+S1# exit<br>
+Switch con0 is now available<br>
+Press RETURN to get started.<br>
+ 
+User Access Verification<br>
+Password:<br>
+S1><br>
+Note: If the switch did not prompt you for a password, then you did not configure the login parameter in Step 2.<br>
+Step 4: Secure privileged mode access.<br>
+Set the enable password to c1$c0. This password protects access to privileged mode.<br>
+Note: The 0 in c1$c0 is a zero, not a capital O. This password will not grade as correct until after you encrypt it in Step 8.<br>
+S1> enable<br>
+S1# configure terminal<br>
+S1(config)# enable password c1$c0<br>
+S1(config)# exit<br>
+%SYS-5-CONFIG_I: Configured from console by console<br>
+S1#<br>
+Step 5: Verify that privileged mode access is secure.<br>
+a.     Enter the exit command again to log out of the switch.<br>
+b.     Press <Enter> and you will now be asked for a password:<br>
+User Access Verification<br>
+Password:<br>
+c.     The first password is the console password you configured for line con 0. Enter this password to return to user EXEC mode.<br>
+d.     Enter the command to access privileged mode.<br>
+e.     Enter the second password you configured to protect privileged EXEC mode.<br>
+f.      Verify your configuration by examining the contents of the running-configuration file:<br>
+S1# show running-config<br>
+Notice that the console and enable passwords are both in plain text. This could pose a security risk if someone is looking over your shoulder or obtains access to config files stored in a backup location.<br>
+Step 6: Configure an encrypted password to secure access to privileged mode.<br>
+The enable password should be replaced with the newer encrypted secret password using the enable secret command. <br>Set the enable secret password to itsasecret.<br>
+S1# config t<br>
+S1(config)# enable secret itsasecret<br>
+S1(config)# exit<br>
+S1#<br>
+Note: The enable secret password overrides the enable password. If both are configured on the switch, you must enter the enable secret password to enter privileged EXEC mode.<br>
+Step 7: Verify that the enable secret password is added to the configuration file.<br>
+Enter the show running-config command again to verify the new enable secret password is configured.<br>
+Note: You can abbreviate show running-config as<br>
+S1# show run<br>
+Questions:<br>
+What is displayed for the enable secret password?<br>
+Why is the enable secret password displayed differently from what we configured?<br>
+Step 8: Encrypt the enable and console passwords.<br>
+As you noticed in Step 7, the enable secret password was encrypted, but the enable and console passwords were still in plain text. We will now encrypt these plain text passwords using the service password-encryption command.<br>
+S1# config t<br>
+S1(config)# service password-encryption<br>
+S1(config)# exit<br>
+Question:<br>
+If you configure any more passwords on the switch, will they be displayed in the configuration file as plain text or in encrypted form? Explain.<br>
+Part 3: Configure a MOTD Banner<br>
+Step 1: Configure a message of the day (MOTD) banner.<br>
+The Cisco IOS command set includes a feature that allows you to configure messages that anyone logging onto the switch sees. These messages are called message of the day, or MOTD banners. Enclose the banner text in quotations or use a delimiter different from any character appearing in the MOTD string.<br>
+S1# config t<br>
+S1(config)# banner motd "This is a secure system. Authorized Access Only!"<br>
+S1(config)# exit<br>
+%SYS-5-CONFIG_I: Configured from console by console<br>
+S1#<br>
+Questions:<br>
+When will this banner be displayed?<br>
+Why should every switch have a MOTD banner?<br>
+Part 4: Save and Verify Configuration Files to NVRAM<br>
+Step 1: Verify that the configuration is accurate using the show run command.<br>
+Save the configuration file. You have completed the basic configuration of the switch. Now back up the running configuration file to NVRAM to ensure that the changes made are not lost if the system is rebooted or loses power.<br>
+S1# copy running-config startup-config<br>
+Destination filename [startup-config]?[Enter]<br>
+Building configuration...<br>
+[OK]<br>
+Close Configuration Window for S1<br>
+Questions:<br>
+What is the shortest, abbreviated version of the copy running-config startup-config command?<br>
+Examine the startup configuration file.<br>
+Which command will display the contents of NVRAM?<br>
+Are all the changes that were entered recorded in the file?<br>
+Part 5: Configure S2<br>
+You have completed the configuration on S1. You will now configure S2. If you cannot remember the commands, refer to Parts 1 to 4 for assistance.<br>
+Configure S2 with the following parameters:<br>
+Open Configuration Window for S2<br>
+a.     Device name: S2<br>
+b.     Protect access to the console using the letmein password.<br>
+c.     Configure an enable password of c1$c0 and an enable secret password of itsasecret.<br>
+d.     Configure an appropriate message to those logging into the switch.<br>
+e.     Encrypt all plain text passwords.<br>
+f.      Ensure that the configuration is correct.<br>
+g.     Save the configuration file to avoid loss if the switch is powered down.<br>
+
