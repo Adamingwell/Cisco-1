@@ -1,6 +1,6 @@
 # Configure Switch Access and Security
 
-[All Packet Tracer labs](README.md) · [Module 2 notes](../Module-2.md) · [Class notes](../Cisco-1-Notes.md)
+[All Packet Tracer labs](README.md) · [Module 2 notes](../Module-2.md) · [Class notes](../Startup.md)
 
 [Switch configuration and passwords](#part-2-create-a-basic-switch-configuration) · [MOTD banner](#part-3-configure-a-motd-banner) · [Save to NVRAM](#part-4-save-and-verify-configuration-files-to-nvram)
 

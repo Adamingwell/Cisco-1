@@ -1,6 +1,6 @@
 # Packet Tracer Labs
 
-[Back to class notes](../Cisco-1-Notes.md)
+[Back to class notes](../Startup.md)
 
 | Lab | What it teaches |
 | --- | --- |

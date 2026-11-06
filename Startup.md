@@ -2,7 +2,7 @@
 
 This is my first document stored in Git.
 
-**[All Packet Tracer labs](Packet-Tracer/README.md)**
+**[All Packet Tracer labs](Packet-Tracer/README.md)** · **[Class Documents](Class-Documents/README.md)**
 
 ## Modules
 

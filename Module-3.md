@@ -1,6 +1,6 @@
 # Module 3: Network Models and Rules
 
-[All modules](Cisco-1-Notes.md) · [Module 1](Module-1.md) · [Module 2](Module-2.md) · [Module 3](Module-3.md)
+[All modules](Startup.md) · [Module 1](Module-1.md) · [Module 2](Module-2.md) · [Module 3](Module-3.md)
 
 [Configure IP addresses and test connectivity](Packet-Tracer/Configure-IP-Addresses-and-Test-Connectivity.md) · [Slides](#presentation-slides)
 
@@ -41,4 +41,4 @@
 
 </details>
 
-[Back to all modules](Cisco-1-Notes.md)
+[Back to all modules](Startup.md)

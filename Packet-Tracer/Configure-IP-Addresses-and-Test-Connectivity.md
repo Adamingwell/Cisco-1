@@ -1,6 +1,6 @@
 # Configure IP Addresses and Test Connectivity
 
-[All Packet Tracer labs](README.md) · [Module 3 notes](../Module-3.md) · [Class notes](../Cisco-1-Notes.md)
+[All Packet Tracer labs](README.md) · [Module 3 notes](../Module-3.md) · [Class notes](../Startup.md)
 
 [IP addressing table](#addressing-table) · [PC setup](#part-2-configure-the-pcs) · [Switch management and ping tests](#part-3-configure-the-switch-management-interface)
 
