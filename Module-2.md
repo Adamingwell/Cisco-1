@@ -2,7 +2,7 @@
 
 [All modules](Startup.md) · [Module 1](Module-1.md) · [Module 2](Module-2.md) · [Module 3](Module-3.md)
 
-[Review questions](#review-questions) · [CLI shortcuts](#cli-shortcut-reference) · [Configure switch access and security](Packet-Tracer/Configure-Switch-Access-and-Security.md) · [Slides](#presentation-slides)
+[Review questions](#review-questions) · [Full study guide](Class-Documents/Module-2-Switch-and-End-Device-Study-Guide.md) · [CLI shortcuts](#cli-shortcut-reference) · [Configure switch access and security](Packet-Tracer/Configure-Switch-Access-and-Security.md) · [Slides](#presentation-slides)
 
 ## Review Questions
 

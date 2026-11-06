@@ -2,7 +2,7 @@
 
 [All modules](Startup.md) · [Module 1](Module-1.md) · [Module 2](Module-2.md) · [Module 3](Module-3.md)
 
-[Review questions](#review-questions) · [Reflection](#b-reflection) · [Slides](#presentation-slides)
+[Review questions](#review-questions) · [Full study guide](Class-Documents/Module-1-Networking-Today-Study-Guide.md) · [Reflection](#b-reflection) · [Slides](#presentation-slides)
 
 ## Review Questions
 
