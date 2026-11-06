@@ -2,7 +2,7 @@
 
 [All modules](Startup.md) · [Module 1](Module-1.md) · [Module 2](Module-2.md) · [Module 3](Module-3.md)
 
-[Configure IP addresses and test connectivity](Packet-Tracer/Configure-IP-Addresses-and-Test-Connectivity.md) · [Slides](#presentation-slides)
+[Full study guide](Class-Documents/Module-3-Protocols-and-Models-Study-Guide.md) · [Configure IP addresses and test connectivity](Packet-Tracer/Configure-IP-Addresses-and-Test-Connectivity.md) · [Slides](#presentation-slides)
 
 ### Module 3 Visuals
 
