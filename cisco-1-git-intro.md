@@ -471,12 +471,18 @@ All pings should be successful. If your first ping result is 80%, try again. It 
 ![Rules](images/Rules.png)
 ![Significance](images/Significance.png)
 
+![text](<Slides/Module 3/slide.png>)
+![text](<Slides/Module 3/slide 2.png>)
+![text](<Slides/Module 3/slide 3.png>) 
+![text](<Slides/Module 3/slide 4.png>)
+![text](<Slides/Module 3/slide 5.png>)
+![text](<Slides/Module 3/slide 6.png>) 
+![text](<Slides/Module 3/slide 7.png>)
 ![text](<Slides/Module 3/slide 8.png>)
 ![text](<Slides/Module 3/slide 9.png>)
-![text](<Slides/Module 3/slide.png>) 
-![text](<Slides/Module 3/slide 6.png>) 
-![text](<Slides/Module 3/slide 7.png>) 
-![text](<Slides/Module 3/slide 5.png>) 
-![text](<Slides/Module 3/slide 4.png>) 
-![text](<Slides/Module 3/slide 3.png>) 
-![text](<Slides/Module 3/slide 2.png>)
+ 
+
+ 
+ 
+ 
+
