@@ -1,3 +1,6 @@
+
+
+
 # My First Git Lab
 
 This is my first document stored in Git.
@@ -355,7 +358,7 @@ S1(config)# exit<br>
 %SYS-5-CONFIG_I: Configured from console by console<br>
 S1#<br>
 Questions:<br>
-When will this banner be displayed?<br>
+When will this banner be displayed?<br> 
 Why should every switch have a MOTD banner?<br>
 Part 4: Save and Verify Configuration Files to NVRAM<br>
 Step 1: Verify that the configuration is accurate using the show run command.<br>
@@ -461,3 +464,5 @@ d.     Ping the IP address for S1.<br>
 e.     Ping the IP address for S2.<br>
 Note: You can also use the ping command on the switch CLI and on PC2.<br>
 All pings should be successful. If your first ping result is 80%, try again. It should now be 100%. You will learn why a ping may sometimes fail the first time later in your studies. If you are unable to ping any of the devices, recheck your configuration for errors.<br>
+
+[text](<images/Module 3 - Protocols and Models Video Slides.html>)
