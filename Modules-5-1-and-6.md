@@ -1,6 +1,6 @@
 # Cisco Introduction to Networks — Section 5.1 and Module 6
 
-[All modules](Startup.md) · [Module 4](Module-4.md)
+[All modules](Startup.md) · [Module 4](Module-4.md) · [Full study guide](Class-Documents/Modules-5-1-and-6-Study-Guide.md)
 
 ## 5.1 Binary Number System
 

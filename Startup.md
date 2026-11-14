@@ -12,8 +12,9 @@ This is my first document stored in Git.
 | [2 · Basic Switch and End-Device Configurations](Module-2.md) | [CLI shortcuts](Module-2.md#cli-shortcut-reference) · [Configure switch access and security](Packet-Tracer/Configure-Switch-Access-and-Security.md) |
 | [3 · Network Models and Rules](Module-3.md) | [Full study guide](Class-Documents/Module-3-Protocols-and-Models-Study-Guide.md) · [Slides](Module-3.md#presentation-slides) · [Configure IP addresses and test connectivity](Packet-Tracer/Configure-IP-Addresses-and-Test-Connectivity.md) |
 | [4 · Physical Layer](Module-4.md) | [Summary](Module-4.md) · [Study guide](Class-Documents/Module-4-Physical-Layer-Study-Guide.md) · [RJ-45 wiring diagram](RJ-45-Cabling.md) |
-| [5.1 · Binary Number System](Modules-5-1-and-6.md#51-binary-number-system) | [Summary](Modules-5-1-and-6.md#51-binary-number-system) |
-| [6 · Data Link Layer](Modules-5-1-and-6.md#61-purpose-of-the-data-link-layer) | [Summary](Modules-5-1-and-6.md#61-purpose-of-the-data-link-layer) |
+| [5.1 · Binary Number System](Modules-5-1-and-6.md#51-binary-number-system) | [Summary](Modules-5-1-and-6.md#51-binary-number-system) · [Study guide](Class-Documents/Modules-5-1-and-6-Study-Guide.md#a-study-guide-questions) |
+| [6 · Data Link Layer](Modules-5-1-and-6.md#61-purpose-of-the-data-link-layer) | [Summary](Modules-5-1-and-6.md#61-purpose-of-the-data-link-layer) · [Study guide](Class-Documents/Modules-5-1-and-6-Study-Guide.md#a-study-guide-questions) |
+| [5.2 and 7 · Switching Unit Part 2](Modules-5-2-and-7.md) | [Slides](Modules-5-2-and-7.md#presentation-slides) · [Expanded learning reference](Modules-5-2-and-7.md#expanded-learning-reference--modules-52-and-7) · [Original study guide](Class-Documents/Module-5-2-and-7-Study-Guide-Original.docx) |
 
 ## `no ip domain-lookup`
 
